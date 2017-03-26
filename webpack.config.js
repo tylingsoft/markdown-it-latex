@@ -1,4 +1,4 @@
-const nodeExternals = require('webpack-node-externals')
+import nodeExternals from 'webpack-node-externals'
 
 const config = {
   target: 'node',
@@ -8,7 +8,7 @@ const config = {
     'test/index': './test/index.js'
   },
   output: {
-    path: '.',
+    path: __dirname,
     filename: '[name].bundle.js',
     libraryTarget: 'commonjs2'
   },
