@@ -4,6 +4,7 @@
   "description": "Plugin for markdown-it, supports KaTex and AsciiMath.",
   "main": "src/index.js",
   "scripts": {
+    "build": "cp ./node_modules/katex/dist/katex.css ./src/ && sed -i '' 's%fonts/%https://cdn.jsdelivr.net/katex/latest/fonts/%g' ./src/katex.css",
     "test": "node -r babel-register -r ignore-styles test/index.js",
     "upgrade": "ncu -ua && yarn upgrade"
   },

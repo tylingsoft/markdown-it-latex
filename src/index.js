@@ -1,4 +1,4 @@
-import 'katex/dist/katex.css'
+import './katex.css'
 
 import asciimath2latex from 'asciimath-to-latex'
 import katex from 'katex'
