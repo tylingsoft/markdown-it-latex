@@ -6,21 +6,21 @@
   "scripts": {
     "build": "cp ./node_modules/katex/dist/katex.css ./src/ && sed -i '' 's%fonts/%https://cdn.jsdelivr.net/katex/latest/fonts/%g' ./src/katex.css",
     "test": "node -r babel-register -r ignore-styles test/index.js",
-    "upgrade": "ncu -ua && yarn upgrade"
+    "upgrade": "yarn-upgrade-all"
   },
   "repository": "git@github.com:tylingsoft/markdown-it-latex.git",
   "author": "Tyler Long <tyler4long@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "babel-preset-env": "^1.3.2",
-    "babel-register": "^6.24.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
     "ignore-styles": "^5.0.1",
-    "markdown-it": "^8.3.1",
-    "npm-check-updates": "^2.10.5",
-    "standard": "^10.0.1"
+    "markdown-it": "^8.4.0",
+    "standard": "^10.0.3",
+    "yarn-upgrade-all": "^0.2.0"
   },
   "dependencies": {
-    "asciimath-to-latex": "^0.3.1",
-    "katex": "^0.7.1"
+    "asciimath-to-latex": "^0.3.2",
+    "katex": "^0.9.0-alpha2"
   }
 }
