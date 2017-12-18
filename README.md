@@ -12,7 +12,9 @@ yarn install markdown-it-latex
 
 ## Usage
 
-```JavaScript
+### for node.js
+
+```js
 import markdownIt from 'markdown-it'
 import markdownItLatex from 'markdown-it-latex'
 const mdi = markdownIt()
@@ -27,13 +29,23 @@ oint_Cx^3 dx+4y^2 dy
 \`\`\``)
 ```
 
+### for browser
+
+You also need to import the css:
+
+```js
+import 'markdown-it-latex/dist/index.css'
+```
+
+Or you can add the css to the web page directly.
+
 
 ## Development
 
 ### Build
 
 ```
-yarn build
+yarn build:watch
 ```
 
 ### Test
@@ -41,3 +53,12 @@ yarn build
 ```
 yarn test
 ```
+
+### Distribution
+
+```
+yarn release && npm publish
+```
+
+
+## Todo
