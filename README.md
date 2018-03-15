@@ -6,7 +6,7 @@ Plugin for markdown-it, supports KaTex and AsciiMath.
 ## Installation
 
 ```
-yarn install markdown-it-latex
+yarn add markdown-it-latex
 ```
 
 
